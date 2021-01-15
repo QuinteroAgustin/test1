@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Accueil du web</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati earum laudantium incidunt velit dicta. Laudantium cum non tempora vero esse ipsa tempore dolorum harum. Dolorem repellendus rerum incidunt error recusandae.</p>
+    <p>Lsorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati earum laudantium incidunt velit dicta. Laudantium cum non tempora vero esse ipsa tempore dolorum harum. Dolorem repellendus rerum incidunt error recusandae.</p>
     
 </body>
 </html>
