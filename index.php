@@ -6,8 +6,22 @@
     <title>Accueil</title>
 </head>
 <body>
-    <h1>Accueil du web</h1>
-    <p>Lsorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati earum laudantium incidunt velit dicta. Laudantium cum non tempora vero esse ipsa tempore dolorum harum. Dolorem repellendus rerum incidunt error recusandae.</p>
+    <h1>Navigation exos</h1>
+    <ul>
+        <li><a href="ht2/ht2.php">ht2</a></li>
+        <li><a href="ht2/ht2b.php">ht2b</a></li>
+        <li><a href="ht3/ht3.php">ht3</a></li>
+        <li><a href="ht3/ht3b.php">ht3b</a></li>
+        <li><a href="ht4/ht4.php">ht4</a></li>
+        <li><a href="ht10/ht10/page.php">ht10</a></li>
+        <li><a href="ht11/ht11.php">ht11</a></li>
+        <li><a href="ht12/ht12.php">ht12</a></li>
+        <li><a href="ht12/ht12b.php">ht12b</a></li>
+        <li><a href="ht12/ht12c.php">ht12c</a></li>
+        <li><a href="ht47/ht47.php">ht47</a></li>
+        <li><a href="ht47/ht47b.php">ht47b</a></li>
+        <li><a href="ht50/ht50.php">ht50</a></li>
+    </ul>
     
 </body>
 </html>
