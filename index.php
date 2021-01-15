@@ -20,6 +20,7 @@
         <li><a href="ht12/ht12c.php">ht12c</a></li>
         <li><a href="ht47/ht47.php">ht47</a></li>
         <li><a href="ht47/ht47b.php">ht47b</a></li>
+        <li><a href="ht49/exo.php">ht49</a></li>
         <li><a href="ht50/ht50.php">ht50</a></li>
     </ul>
     
