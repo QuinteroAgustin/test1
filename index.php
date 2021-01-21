@@ -22,6 +22,11 @@
         <li><a href="ht47/ht47b.php">ht47b</a></li>
         <li><a href="ht49/exo.php">ht49</a></li>
         <li><a href="ht50/ht50.php">ht50</a></li>
+        <li><a href="ht13/exo.php">ht13</a></li>
+        <li><a href="ht13/b/exo.php">ht13b</a></li>
+        <p>CSS</p>
+        <li><a href="cs01/exo.php">cs01</a></li>
+        <li><a href="cs02/exo.php">cs02</a></li>
     </ul>
     
 </body>
