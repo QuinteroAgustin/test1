@@ -27,6 +27,7 @@
         <p>CSS</p>
         <li><a href="cs01/exo.php">cs01</a></li>
         <li><a href="cs02/exo.php">cs02</a></li>
+        <li><a href="cs26/exo.php">cs26</a></li>
     </ul>
     
 </body>
