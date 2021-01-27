@@ -15,6 +15,16 @@
         <br>
         <label for="prenom">Prénom :</label><br>
         <input type="text" name="prenom" id="prenom">
+        <br>
+        <label for="dep">Département de résidence : </label>
+        <select name="dep" id="dep">
+            <option value="gers" selected="selected">Gers</option>
+            <option value="ht">HauteGarone</option>
+            <option value="deparement2">tacapté</option>
+            <option value="tl">trop long</option>
+            <option value="dft">de faire tt</option>
+            <option value="ldrptm">les départements</option>
+        </select>
         <p>J'aime :</p>
         <label for="biere">La bière</label>
         <input type="checkbox" name="biere" id="biere">
@@ -27,11 +37,11 @@
         <br>
         <p>Je suis un/une :</p>
         <label for="garcon">Garçon</label>
-        <input type="radio" name="g" id="garcon" value="g">
+        <input type="radio" name="g" id="garcon" value="g" checked>
         <label for="fille">Fille</label>
         <input type="radio" name="g" id="fille" value="f">        
         <br>
-        <button>Envoyer</button>&nbsp;<button>Réinitialiser</button>
+        <button>Envoyer</button>&nbsp;<input type="reset" value="Réinitialiser">
     </form>
     
     <p>Aller au <a href="#top">Top</a></p>
