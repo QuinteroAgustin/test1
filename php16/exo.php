@@ -28,7 +28,7 @@
             echo "<tr>";
             echo "<td>".$key."</td>";
             echo "<td>".$values."</td>";
-            echo "<tr>";
+            echo "</tr>";
         }
         ?>
     </table>

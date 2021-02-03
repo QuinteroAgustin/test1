@@ -24,12 +24,19 @@
         <li><a href="ht50/ht50.php">ht50</a></li>
         <li><a href="ht13/exo.php">ht13</a></li>
         <li><a href="ht13/b/exo.php">ht13b</a></li>
+        <li><a href="ht66/index.php">ht66</a></li>
         <p>CSS</p>
         <li><a href="cs01/exo.php">cs01</a></li>
         <li><a href="cs02/exo.php">cs02</a></li>
+        <li><a href="cs08/exo.php">cs08</a></li>
+        <li><a href="cs15/exo.php">cs15</a></li>
         <li><a href="cs26/exo.php">cs26</a></li>
         <p>PHP</p>
         <li><a href="php01/exo.php">php1</a></li>
+        <li><a href="php06b/exo.php">php06b</a></li>
+        <li><a href="php09b/exo.php">php09b</a></li>
+        <li><a href="php12/exo.php">php12</a></li>
+        <li><a href="php13/exo.php">php13</a></li>
         <li><a href="php16/exo.php">php16</a></li>
     </ul>
     

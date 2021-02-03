@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* main.css */
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+div.nav img{
+    margin-top: 50px;
+}
+
+div.nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+div.nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+div.nav li a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+div.nav .active {
+    background-color:red;
+}
+div.nav .tjaune {
+    color: rgb(255, 208, 0);
+}
+
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+
+div.marge {
+    margin-top: 30px;
+    margin: 5px;
+    padding: 20px;
+}
+
+div.marge li{
+    
+}

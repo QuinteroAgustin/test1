@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* main.css */
+
+.tqt {
+    font-size: 2em;
+}
+.tkt {
+    font-size: 4em;
+}
+table {
+    border-spacing: 0px;
+}
+tr, td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-collapse: collapse;
+}
+.noir{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+.jaune{
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+}

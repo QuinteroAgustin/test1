@@ -138,13 +138,13 @@
         $x=5;
         $y=10;
         echo '<table>';
-        for($i=0;$i<$y;$i++){
+        for($i=1;$i<=$y;$i++){
             echo '<tr>';
-            for($j=0;$j<$x;$j++){
-                if($i==0){
+            for($j=1;$j<=$x;$j++){
+                if($i==1){
                     echo "<td>".$j."</td>";
                 }else{
-                    if($j==0){
+                    if($j==1){
                         echo "<td>".$i."</td>";
                     }else{
                         echo "<td></td>";
