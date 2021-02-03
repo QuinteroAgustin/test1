@@ -39,6 +39,8 @@
         <li><a href="php13/exo.php">php13</a></li>
         <li><a href="php16/exo.php">php16</a></li>
         <li><a href="php17/exo.php">php17</a></li>
+        <li><a href="php20/exo.php">php20</a></li>
+        <li><a href="php41/exo.php">php41</a></li>
     </ul>
     
 </body>
