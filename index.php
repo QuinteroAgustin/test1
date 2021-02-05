@@ -30,6 +30,8 @@
         <li><a href="cs02/exo.php">cs02</a></li>
         <li><a href="cs08/exo.php">cs08</a></li>
         <li><a href="cs15/exo.php">cs15</a></li>
+        <li><a href="cs18/exo.php">cs18</a></li>
+        <li><a href="cs21/exo.php">cs21</a></li>
         <li><a href="cs26/exo.php">cs26</a></li>
         <p>PHP</p>
         <li><a href="php01/exo.php">php1</a></li>

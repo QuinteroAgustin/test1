@@ -11,23 +11,27 @@
         <img src="img/home.jpg" width=100% alt="ta capté">
         <ul>
             <li><a class="active tjaune left" href="index.php">Accueil</a></li>
-            <li><a class="right" href="bureau.php">Correspondance des bureaux</a></li>
-            <li><a class="right" href="services.php">Services proposé</a></li>
+            <li><a class="right" href="pages/bureaux.php">Correspondance des bureaux</a></li>
+            <li><a class="right" href="pages/financement.php">Financement</a></li>
+            <li><a class="right" href="pages/missions.php">Missions</a></li>
+            <li><a class="right" href="pages/services.php">Services proposés</a></li>
         </ul>
     </div>
     <div class="marge">
         <h1>Maison des ligues</h1>
-        <ul>
-            <li><img src="img/art1.jpg" width=20% height=15% alt="art1"><br><a href="">Voir l'article</a></li>
-            <li><img src="img/art2.jpg" width=20% height=15% alt="art2"><br><a href="">Voir l'article</a></li>
-            <li><img src="img/art3.jpg" width=20% height=15% alt="art3"><br><a href="">Voir l'article</a></li>
+        <ul class="inline">
+            <li><img src="img/art1.jpg" width=20% height=15% alt="art1"><br><a href="pages/article.php">Voir l'article</a></li>
+            <li><img src="img/art2.jpg" width=20% height=15% alt="art2"><br><a href="pages/article.php">Voir l'article</a></li>
+            <li><img src="img/art3.jpg" width=20% height=15% alt="art3"><br><a href="pages/article.php">Voir l'article</a></li>
         </ul>
-
-
-
-
+        <p><h5>Coordonnées du directeur de la ligue</h5> M. Lucien Sapin,<br>lucien.sapin@gmail.combr<br>Tél:0615614135</p>
     </div>
-    <p><a href="#top">Top</a></p>
-    <p><a href="/git/test1/index.php">Home</a></p>
+    <div class="footer">
+        <ul>
+            <li><a class="right" href="pages/contact.php">Contact</a></li>
+            <li><a class="left" href="#top">Top</a></li>
+        </ul>
+    </div>
+    
 </body>
 </html>

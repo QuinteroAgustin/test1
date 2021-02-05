@@ -34,7 +34,7 @@ div.nav li a:hover {
     background-color: rgb(0, 0, 0);
 }
 
-div.nav .active {
+div .active {
     background-color:red;
 }
 div.nav .tjaune {
@@ -47,13 +47,35 @@ div.nav .tjaune {
 .left{
     float: left;
 }
-
+.center{
+    float: center;
+}
 div.marge {
     margin-top: 30px;
     margin: 5px;
     padding: 20px;
 }
 
-div.marge li{
-    
+.inline { display:inline; }
+
+div.footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightslategray;
+    width: 100%;
+    bottom: 0;
+}
+
+div.footer li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+div.footer li a:hover {
+    background-color: #333;
 }
