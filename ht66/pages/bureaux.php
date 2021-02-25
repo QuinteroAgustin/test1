@@ -19,7 +19,8 @@
     </div>
     <div class="marge">
         <h1>Bureaux</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut non nemo sint rem doloremque quisquam deserunt in, laboriosam hic, fuga ad veniam. Sed, animi. Sed ab repellendus voluptatem at vel?</p>
+        <h4>Plan bâtiment A</h4>
+        <img src="../img/bureaux.png" alt="planbat A">
     </div>
     <div class="footer">
         <ul>

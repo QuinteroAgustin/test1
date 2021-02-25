@@ -35,6 +35,7 @@
         <li><a href="cs26/exo.php">cs26</a></li>
         <p>PHP</p>
         <li><a href="php01/exo.php">php1</a></li>
+        <li><a href="php05/exo.php">php5</a></li>
         <li><a href="php06b/exo.php">php06b</a></li>
         <li><a href="php09b/exo.php">php09b</a></li>
         <li><a href="php12/exo.php">php12</a></li>

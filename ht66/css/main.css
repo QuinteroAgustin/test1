@@ -79,3 +79,7 @@ div.footer li a{
 div.footer li a:hover {
     background-color: #333;
 }
+
+div.contact {
+    text-align: center;
+}

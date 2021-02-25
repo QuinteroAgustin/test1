@@ -24,7 +24,7 @@
             <li><img src="img/art2.jpg" width=20% height=15% alt="art2"><br><a href="pages/article.php">Voir l'article</a></li>
             <li><img src="img/art3.jpg" width=20% height=15% alt="art3"><br><a href="pages/article.php">Voir l'article</a></li>
         </ul>
-        <p><h5>Coordonnées du directeur de la ligue</h5> M. Lucien Sapin,<br>lucien.sapin@gmail.combr<br>Tél:0615614135</p>
+        <p><h5>Coordonnées du directeur de la ligue</h5> M. Lucien Sapin,<br>lucien.sapin@gmail.com<br>Tél:0615614135</p>
     </div>
     <div class="footer">
         <ul>

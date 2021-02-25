@@ -19,6 +19,7 @@
     </div>
     <div class="marge">
         <h1>Financement</h1>
+        <img src="../img/financement.jpg" alt="financement">
         <h4>Type de financement</h4>
         <p>Q. M. Sapin, merci de nous accueillir dans ces locaux tous neufs et superbes de l’extension de la Maison des Ligues de Lorraine.</p>
         <p>Pouvez-vous nous dire quel est le statut juridique de cette maison, et quelles sont ses sources de financement ?</p>
