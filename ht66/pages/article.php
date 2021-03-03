@@ -19,6 +19,10 @@
     </div>
     <div class="marge">
         <h1>Article</h1>
+        <h4>Nom de l'artice</h4>
+        <img src="../img/art2.jpg" width="20%" alt="image">
+        <p>Contenu de l'article</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vel molestias voluptatum mollitia tempora non, aut error laboriosam vero cupiditate eius. Nihil nesciunt officia eius voluptatem quidem sint tenetur mollitia?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut non nemo sint rem doloremque quisquam deserunt in, laboriosam hic, fuga ad veniam. Sed, animi. Sed ab repellendus voluptatem at vel?</p>
     </div>
     <div class="footer">

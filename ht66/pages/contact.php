@@ -33,7 +33,7 @@
                     <label for="objet">Votre  Objet : </label>
                     <input type="text" name="objet" id="objet">
                     <br>
-                    <label for="message">Message : </label>
+                    <label for="message">Message : </label><br> 
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
                     <br>
                     <input type="submit" value="Envoyer">

@@ -19,11 +19,13 @@
     </div>
     <div class="marge">
         <h1>Maison des ligues</h1>
-        <ul class="inline">
-            <li><img src="img/art1.jpg" width=20% height=15% alt="art1"><br><a href="pages/article.php">Voir l'article</a></li>
-            <li><img src="img/art2.jpg" width=20% height=15% alt="art2"><br><a href="pages/article.php">Voir l'article</a></li>
-            <li><img src="img/art3.jpg" width=20% height=15% alt="art3"><br><a href="pages/article.php">Voir l'article</a></li>
-        </ul>
+        <div class="contact">
+            <ul>
+                <li><img src="img/art1.jpg" width=20% height=15% alt="art1"><br><a href="pages/article.php">Voir l'article</a></li>
+                <li><img src="img/art2.jpg" width=20% height=15% alt="art2"><br><a href="pages/article.php">Voir l'article</a></li>
+                <li><img src="img/art3.jpg" width=20% height=15% alt="art3"><br><a href="pages/article.php">Voir l'article</a></li>
+            </ul>
+        </div>
         <p><h5>Coordonnées du directeur de la ligue</h5> M. Lucien Sapin,<br>lucien.sapin@gmail.com<br>Tél:0615614135</p>
     </div>
     <div class="footer">
