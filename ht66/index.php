@@ -10,7 +10,7 @@
     <div class="nav">
         <img src="img/home.jpg" width=100% alt="ta capté">
         <ul>
-            <li><a class="active tjaune left" href="index.php">Accueill</a></li>
+            <li><a class="active tjaune left" href="index.php">Accueil</a></li>
             <li><a class="right" href="pages/bureaux.php">Correspondance des bureaux</a></li>
             <li><a class="right" href="pages/financement.php">Financement</a></li>
             <li><a class="right" href="pages/missions.php">Missions</a></li>
