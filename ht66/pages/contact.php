@@ -21,20 +21,28 @@
         <h1>Contact</h1>
             <div class="contact">
                 <form action="#" method="post">
-                    <label for="nom">Votre  Nom : </label>
-                    <input type="text" name="nom" id="nom">
-                    <br>
-                    <label for="prenom">Votre  Prénom : </label>
-                    <input type="text" name="prenom" id="prenom">
-                    <br>
-                    <label for="email">Votre  Email : </label>
-                    <input type="email" name="email" id="email">
-                    <br>
-                    <label for="objet">Votre  Objet : </label>
-                    <input type="text" name="objet" id="objet">
-                    <br>
-                    <label for="message">Message : </label><br> 
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <table class="tabarticles">
+                        <tr>
+                            <td><label for="nom">Votre  Nom : </label></td>
+                            <td><input class="left" type="text" name="nom" id="nom"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="prenom">Votre  Prénom : </label></td>
+                            <td><input class="left" type="text" name="prenom" id="prenom"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Votre  Email : </label></td>
+                            <td><input class="left" type="email" name="email" id="email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="objet">Votre  Objet : </label></td>
+                            <td><input class="left" type="text" name="objet" id="objet"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="message">Message : </label></td>
+                            <td><textarea name="message" id="message" cols="80" rows="30"></textarea></td>
+                        </tr>
+                    </table>
                     <br>
                     <input type="submit" value="Envoyer">
                 </form>

@@ -19,12 +19,15 @@
     </div>
     <div class="marge">
         <h1>Maison des ligues</h1>
-        <div class="contact">
-            <ul>
-                <li><img src="img/art1.jpg" width=20% height=15% alt="art1"><br><a href="pages/article.php">Voir l'article</a></li>
-                <li><img src="img/art2.jpg" width=20% height=15% alt="art2"><br><a href="pages/article.php">Voir l'article</a></li>
-                <li><img src="img/art3.jpg" width=20% height=15% alt="art3"><br><a href="pages/article.php">Voir l'article</a></li>
-            </ul>
+        <div class="articles">
+        <table class="tabarticles">
+            <tr>
+                <td><img src="img/art1.jpg" width=300px height=300px alt="art1"><br><a href="pages/article.php">Voir l'article</a></td>
+                <td><img src="img/art2.jpg" width=300px height=300px alt="art2"><br><a href="pages/article.php">Voir l'article</a></td>
+                <td><img src="img/art3.jpg" width=300px height=300px alt="art3"><br><a href="pages/article.php">Voir l'article</a></td>
+                <td><img src="img/art4.jpg" width=300px height=300px alt="art3"><br><a href="pages/article.php">Voir l'article</a></td>
+            </tr>
+        </table>
         </div>
         <p><h5>Coordonnées du directeur de la ligue</h5> M. Lucien Sapin,<br>lucien.sapin@gmail.com<br>Tél:0615614135</p>
     </div>
@@ -34,6 +37,5 @@
             <li><a class="left" href="#top">Top</a></li>
         </ul>
     </div>
-    
 </body>
 </html>
