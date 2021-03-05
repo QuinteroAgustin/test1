@@ -36,18 +36,18 @@
     <form action="">
         <label for="valeur">Euro : </label>
         <input type="text" name="valeur1" id="valeur1">
-        <button type="button" onclick="conversion(1)">euro>dollar</button>
+        <button type="button" onclick="conversion2(1)">euro>dollar</button>
     </form>
     <br>
     <form action="">
         <label for="valeur">Dollar : </label>
         <input type="text" name="valeur2" id="valeur2">
-        <button type="button" onclick="conversion(2)">dollar>euro</button>
+        <button type="button" onclick="conversion2(2)">dollar>euro</button>
     </form>
     <p id="euro1"></p>
     <p id="dollar1"></p>
     <script>
-        function conversion(a){
+        function conversion2(a){
             var euro, dollar;
             if(a==1){
                 euro=document.getElementById("valeur1").value;
