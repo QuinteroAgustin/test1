@@ -66,6 +66,7 @@
                     <li><a href="php/php25/exo.php">php25</a></li>
                     <li><a href="php/php25b/exo.php">php25b</a></li>
                     <li><a href="php/php41/exo.php">php41</a></li>
+                    <li><a href="php/phpexam/exo.php">EXAM</a></li>
                 </ul>
             </td>
             <td>
@@ -76,6 +77,10 @@
                     <li><a href="js/js4/exo.php">js4</a></li>
                     <li><a href="js/js5/exo.php">js5</a></li>
                     <li><a href="js/js6/exo.php">js6</a></li>
+                    <li><a href="js/js7/exo.php">js7</a></li>
+                    <li><a href="js/js8/exo.php">js8</a></li>
+                    <li><a href="js/js9/exo.php">js9</a></li>
+                    <li><a href="js/js10/exo.php">js10</a></li>
                 </ul>
             </td>
         </tr>
