@@ -1,0 +1,19 @@
+<?php 
+    session_start(); 
+    if(isset($_SESSION['compteuraccueil'])){
+        $_SESSION['compteuraccueil']=0;
+    }else{
+        $_SESSION['compteuraccueil']=0;
+    }
+    if(isset($_SESSION['compteurpage3'])){
+        $_SESSION['compteurpage3']=0;
+    }else{
+        $_SESSION['compteurpage3']=0;
+    }
+    if(isset($_SESSION['compteurpage2'])){
+        $_SESSION['compteurpage2']=0;
+    }else{
+        $_SESSION['compteurpage2']=0;
+    }
+    header('Location: exo.php');
+?>

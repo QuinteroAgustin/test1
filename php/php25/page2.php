@@ -1,9 +1,8 @@
 <?php 
-    session_start(); 
-    if(isset($_SESSION['compteur'])){
-        $_SESSION['compteur']=$_SESSION['compteur']+1;
+    if(isset($_COOKIE['compteur'])){
+        setcookie('compteur',$_COOKIE['compteur']+1);
     }else{
-        $_SESSION['compteur']=1;
+        setcookie('compteur',1);
     }
 ?>
 <!DOCTYPE html>
@@ -19,6 +18,6 @@
     <p><a href="exo.php">Home</a></p>
     <p><a href="page3.php">Page 3</a></p>
     <p><a href="raz.php">Raz compteur</a></p>
-    <p>Compteur de visite : <?= $_SESSION['compteur'] ?></p>
+    <p>Compteur de visite : <?= $_COOKIE['compteur'] ?></p>
 </body>
 </html>

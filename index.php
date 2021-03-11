@@ -64,7 +64,9 @@
                     <li><a href="php/php20/exo.php">php20</a></li>
                     <li><a href="php/php21/exo.php">php21</a></li>
                     <li><a href="php/php25/exo.php">php25</a></li>
-                    <li><a href="php/php25b/exo.php">php25b</a></li>
+                    <li><a href="php/php26/exo.php">php26</a></li>
+                    <li><a href="php/php27/exo.php">php27</a></li>
+                    <li><a href="php/php30/liste.php">php30</a></li>
                     <li><a href="php/php41/exo.php">php41</a></li>
                     <li><a href="php/phpexam/exo.php">EXAM</a></li>
                 </ul>
