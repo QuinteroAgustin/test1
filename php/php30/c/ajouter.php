@@ -28,19 +28,20 @@
 <body>
     <h1>Ajouter</h1>
     <form action="ajouter.php" method="POST">
-        <label for="nom">Nom : </label>
+        <label for="nom">Nom : </label><br>
         <input type="text" name="nom" id="nom">
         <br>
-        <label for="nom">Prénom : </label>
+        <label for="nom">Prénom : </label><br>
         <input type="text" name="prenom" id="prenom">
         <br>
-        <label for="nom">Age : </label>
+        <label for="nom">Age : </label><br>
         <input type="number" name="age" id="age">
         <br>
-        <label for="nom">Code postal : </label>
+        <label for="nom">Code postal : </label><br>
         <input type="number" name="cp" id="cp">
-        <br>
-        <input type="submit" name="submit" value="Ajouter">
+        <br><br>
+        <input type="submit" name="submit" value="Ajouter">&nbsp;
+        <input type="reset" value="Vider">
     </form>
     <p>Retour a la <a href="exoc.php">Liste</a></p>
 </body>

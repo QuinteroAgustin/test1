@@ -40,19 +40,20 @@
     <h1>Edit de <?= $results['nom'] ?> <?= $results['prenom'] ?></h1>
     <form action="edit.php" method="POST">
         <input type="hidden" name="id" id="id" value="<?= $results['id']; ?>">
-        <label for="nom">Nom : </label>
+        <label for="nom">Nom : </label><br>
         <input type="text" name="nom" id="nom" value="<?= $results['nom']; ?>">
         <br>
-        <label for="nom">Prénom : </label>
+        <label for="nom">Prénom : </label><br>
         <input type="text" name="prenom" id="prenom" value="<?= $results['prenom']; ?>">
         <br>
-        <label for="nom">Age : </label>
+        <label for="nom">Age : </label><br>
         <input type="number" name="age" id="age" value="<?= $results['age']; ?>">
         <br>
-        <label for="nom">Code postal : </label>
+        <label for="nom">Code postal : </label><br>
         <input type="number" name="cp" id="cp" value="<?= $results['cp']; ?>">
-        <br>
-        <input type="submit" name="submit" value="Modifier">
+        <br><br>
+        <input type="submit" name="submit" value="Modifier">&nbsp;
+        <input type="reset" value="Vider">
     </form>
     <p>Retour a la <a href="exoc.php">Liste</a></p>
 </body>
