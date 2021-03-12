@@ -11,6 +11,7 @@
     <ul>
         <li><a href="exo.php">a</a></li>
         <li><a href="exob.php">b</a></li>
+        <li><a href="c/exoc.php">c</a></li>
     </ul>
     <p>Aller au <a href="#top">Top</a></p>  
     <p><a href="/git/test1/index.php">Home</a></p>

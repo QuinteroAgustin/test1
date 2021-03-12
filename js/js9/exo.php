@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS 8</title>
+    <title>JS 9</title>
 </head>
 <body>
-    <h1>JS 8 - mentions au bac</h1>
+    <h1>JS 9 - IMC</h1>
     
-    <p id="note"></p>
-    <p id="mention"></p>
+    <p id="taille"></p>
+    <p id="masse"></p>
+    <p id="indice"></p>
+    <p id="interpretation"></p>
 
     <script src="js/main.js"></script> 
 </body>

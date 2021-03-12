@@ -1,6 +1,6 @@
 <?php 
     include('sql.php'); 
-    $sql="SELECT * FROM personnes";
+    $sql="SELECT * FROM personnes ORDER BY nom ASC";
     $request=db_connect()->prepare($sql);
     $request->execute();
     $results=$request->fetchAll();
@@ -25,6 +25,7 @@
             <th>Code postal</th>
         </tr>
         <?php
+            $comp=0;
             foreach($results as $row){
                 echo "<tr>";
                 echo "<td>".$row['nom']."</td>";
@@ -32,8 +33,10 @@
                 echo "<td>".$row['age']."</td>";
                 echo "<td>".$row['cp']."</td>";
                 echo "</tr>";
+                $comp++;
             }
         ?>
     </table>
+    <p>Il y a <?= $comp; ?> personne(s)</p>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <?php 
-    include('sql.php'); 
+    include('../sql.php'); 
     $sql="SELECT personnes.nom, personnes.prenom, communes.commune FROM personnes, communes WHERE personnes.cp=communes.cp ORDER BY communes.commune ASC";
     $request=db_connect()->prepare($sql);
     $request->execute();
@@ -13,10 +13,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PH 30</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <h1>PHP 30 <a href="liste.php">liste</a></h1>
+    <h1>PHP 30 <a href="../liste.php">liste</a></h1>
     <table>
         <tr>
             <th>Nom</th>
@@ -36,5 +36,6 @@
         ?>
     </table>
     <p>Il y a <?= $comp; ?> personne(s)</p>
+    <p>Liste par nom <a href="exoc.php">ici</a></p>
 </body>
 </html>
