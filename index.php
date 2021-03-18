@@ -83,6 +83,8 @@
                     <li><a href="js/js8/exo.php">js8</a></li>
                     <li><a href="js/js9/exo.php">js9</a></li>
                     <li><a href="js/js10/exo.php">js10</a></li>
+                    <li><a href="js/js12/exo.php">js12</a></li>
+                    <li><a href="js/js41/exo.php">js41</a></li>
                 </ul>
             </td>
         </tr>
