@@ -8,7 +8,9 @@
 </head>
 <body>
     <h1>JS 12d - table de multiplication avec form</h1>
-    <p id="title"></p>
+    <input type="text" name="value" id="value">
+    <button type="button" onclick="calcul()">Submit</button>
+    <p id="result"></p>
     <script src="js/main.js"></script> 
 </body>
 </html>
