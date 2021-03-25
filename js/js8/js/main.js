@@ -10,6 +10,6 @@ if(nb>=10 && nb<12){
 }else if(nb>=16){
     mention="Très bien";
 }else{
-    mention="Pas le BAC";
+    mention="Refusé";
 }
 document.getElementById("mention").innerHTML = "Mention : "+mention;

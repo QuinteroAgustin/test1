@@ -80,12 +80,12 @@
                     <li><a href="js/js5/exo.php">js5</a></li>
                     <li><a href="js/js6/exo.php">js6</a></li>
                     <li><a href="js/js7/exo.php">js7</a></li>
-                    <li><a href="js/js8/exo.php">js8</a></li>
+                    <li><a href="js/js8/exo.html">js8</a></li>
                     <li><a href="js/js9/exo.php">js9</a></li>
                     <li><a href="js/js10/exo.php">js10</a></li>
                     <li><a href="js/js12/exo.php">js12</a></li>
-                    <li><a href="js/js12d/exo.php">js12d</a></li>
-                    <li><a href="js/js37/exo.php">js37</a></li>
+                    <li><a href="js/js12d/exo.html">js12d</a></li>
+                    <li><a href="js/js37/exo.html">js37</a></li>
                     <li><a href="js/js41/exo.php">js41</a></li>
                 </ul>
             </td>
