@@ -7,8 +7,8 @@
     <title>JS 12</title>
 </head>
 <body>
-    <h1>JS 12</h1>
-    
+    <h1>JS 12 - table de multiplication </h1>
+    <p id="title"></p>
     <script src="js/main.js"></script> 
 </body>
 </html>

@@ -8,7 +8,9 @@
 </head>
 <body>
     <h1>JS 10 </h1>
-    
+    <p id="result"></p>
+    <p id="x1"></p>
+    <p id="x2"></p>
     
     <script src="js/main.js"></script> 
 </body>
