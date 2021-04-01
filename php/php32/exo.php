@@ -38,3 +38,13 @@ $response=$request->fetchAll();
     <a href="../../index.php">Index</a>
 </body>   
 </html>
+
+
+<?php
+/* un nom, pv, atack*/
+$loic = new personne();
+$gus = new personne();
+
+
+
+?>
