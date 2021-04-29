@@ -1,17 +1,22 @@
 <?php
     class Voiture{
-        var $marque;
+        private $marque;
         var $model;
         var $nom;
         var $compteur;
         var $aDemarre;
 
-        function __construct($marque=NULL, $model=NULL, $nom=NULL){
-            $this->marque = isset($marque)?$marque:"???";
-            $this->model = isset($model)?$model:"???";
+        function __construct($nom=NULL){
+            $this->marque = "Renault";
+            $this->model = "???";
             $this->nom = isset($nom)?$nom:"???";
             $this->compteur = 0;
             $this->aDemarre = False;
+            return $this;
+        }
+
+        function __destruct(){
+            echo "Destruct: Bonne journée ".$this->nom." le frr le monde est injuste<br>";
         }
 
         function demarrer(){
@@ -40,6 +45,18 @@
             $distance = rand(0,300);
             $this->avancer($distance);
             return $this;
+        }
+
+        function setMarque($marque){
+            if($marque == "Renault" || $marque == "Dacia"){
+                $this->marque = $marque;
+            }else{
+                echo "Error marque indisponible";
+            }
+                
+        }
+        function getMarque($marque){
+            echo $this->marque;
         }
 
         function afficher(){

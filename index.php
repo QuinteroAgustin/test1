@@ -100,6 +100,8 @@
             <ul>
                 <li><a href="poo/po1/exo.php">poo1</a></li>
                 <li><a href="poo/po2/exo.php">poo2</a></li>
+                <li><a href="poo/po3/exo.php">poo3</a></li>
+                <li><a href="poo/po4/exo.php">poo4</a></li>
             </ul>
         </td>
         </tr>

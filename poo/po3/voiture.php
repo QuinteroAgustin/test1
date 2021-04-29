@@ -12,6 +12,11 @@
             $this->nom = isset($nom)?$nom:"???";
             $this->compteur = 0;
             $this->aDemarre = False;
+            return $this;
+        }
+
+        function __destruct(){
+            echo "Destruct: Bonne journée ".$this->nom." le frr le monde est injuste<br>";
         }
 
         function demarrer(){
