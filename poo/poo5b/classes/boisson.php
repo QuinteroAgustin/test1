@@ -2,14 +2,17 @@
     class boisson {
 
         private $nom ;
-        private $contenance = 0 ;
+        private $contenance;
         private $categorie ;
-        private $est_alcoolisee = FALSE;
+        private $est_alcoolisee;
 
-        public function __construct($nom, $contenance) {
+        public function __construct($nom, $contenance=0) {
             $this->nom = $nom;
             $this->commande("Créer la boisson ".$this->get_nom());
-            $this->contenance = $contenance;
+            if($contenance>=0){
+                $this->contenance = $contenance;
+            }
+            $this->est_alcoolisee = FALSE;
             $this->reponse("Salut, je suis du ".$this->get_nom());
         }
 
