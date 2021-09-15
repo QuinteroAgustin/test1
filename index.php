@@ -11,6 +11,7 @@
         <tr>
             <th>HTML</th>
             <th>CSS</th>
+            <th>controles</th>
         </tr>
         <tr>
             <td>
@@ -43,6 +44,11 @@
                     <li><a href="css/cs18/exo.php">cs18</a></li>
                     <li><a href="css/cs21/exo.php">cs21</a></li>
                     <li><a href="css/cs26/exo.php">cs26</a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><a href="quintero_controle_3">controle3</a></li>
                 </ul>
             </td>
         </tr>
@@ -109,6 +115,9 @@
                 <li><a href="poo/poo_j/exo.php">poo_j</a></li>
                 <li><a href="poo/poo_l/exo.php">poo_l</a></li>
                  <li><a href="poo/poo_n/exo.php">poo_n</a></li>
+                 <li><a href="poo/poo5/exo.php">poo_5</a></li>
+                 <li><a href="poo/poo5b/exo.php">poo_5b</a></li>
+                 <li><a href="poo/poo5c/exo.php">poo_5c</a></li>
             </ul>
         </td>
         </tr>
