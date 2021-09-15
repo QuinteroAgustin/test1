@@ -24,12 +24,17 @@
             }else{
                 echo "<p>".$this->get_nom()." ne peut pas charger : ". $charge ." kg </p>";
             }
-        }
-        //exo poo k
-        function afficher()
-        {
-            parent::afficher();
+        }  
+        // Afficher
+        function afficher() {
+            echo "<p>--- Description de " . $this->nom . " ---</p>";
             echo "<ul>";
+            echo "<li>Marque      : " . $this->marque . "</li>";
+            echo "<li>Modèle      : " . $this->modele . "</li>";
+            echo "<li>Nom         : " . $this->nom . "</li>";
+            echo "<li>Compteur    : " . $this->compteur . "</li>";
+            echo "<li>a démarré ? : " . $this->get_lib_etat() . "</li>";
+            echo "<li>Type : ". $this->type ."</li>";
             echo "<li>Chargement  : " . $this->get_chargement() . " kg</li>";
             echo "</ul>";
         }

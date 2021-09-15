@@ -5,7 +5,7 @@
  *
  * @author jef
  */
-class Vehicule{
+abstract class Vehicule{
 
   private $marque = "???";
   private $modele = "???";
@@ -115,18 +115,7 @@ class Vehicule{
     Html::e("<p>arreter : la voiture est arrétée</p>");
   }
 
-  // Afficher
-  function afficher() {
-    echo "<p>--- Description de " . $this->nom . " ---</p>";
-    echo "<ul>";
-    echo "<li>Marque      : " . $this->marque . "</li>";
-    echo "<li>Modèle      : " . $this->modele . "</li>";
-    echo "<li>Nom         : " . $this->nom . "</li>";
-    echo "<li>Compteur    : " . $this->compteur . "</li>";
-    echo "<li>a démarré ? : " . $this->get_lib_etat() . "</li>";
-    echo "<li>Type : ". $this->type ."</li>";
-    echo "</ul>";
-  }
+  abstract function afficher();
 
 }
 

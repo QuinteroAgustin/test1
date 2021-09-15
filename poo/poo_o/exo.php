@@ -24,10 +24,10 @@
     $voiture1->avancer(100);
     $voiture1->afficher();
     // Le véhicule
-    $vehicule1 = new Vehicule("vehicule1");
+    /*$vehicule1 = new Vehicule("vehicule1");
     $vehicule1->demarrer();
     $vehicule1->avancer(200);
-    $vehicule1->afficher();
+    $vehicule1->afficher();*/
     // Le camion
     $camion1 = new Camion("camion1");
     $camion1->charger(5000);
