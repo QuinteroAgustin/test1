@@ -115,9 +115,11 @@
                 <li><a href="poo/poo_j/exo.php">poo_j</a></li>
                 <li><a href="poo/poo_l/exo.php">poo_l</a></li>
                  <li><a href="poo/poo_n/exo.php">poo_n</a></li>
+                 <li><a href="poo/poo_o/exo.php">poo_o</a></li>
                  <li><a href="poo/poo5/exo.php">poo_5</a></li>
                  <li><a href="poo/poo5b/exo.php">poo_5b</a></li>
                  <li><a href="poo/poo5c/exo.php">poo_5c</a></li>
+                 <li><a href="poo/poo2/exo.php">poo_2</a></li>
             </ul>
         </td>
         </tr>
