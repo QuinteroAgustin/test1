@@ -61,6 +61,7 @@
         <tr>
             <th>PHP</th>
             <th>JS</th>
+            <th>POO</th>
         </tr>
         <tr>
             <td>
@@ -103,35 +104,32 @@
                     <li><a href="js/js41/exo.php">js41</a></li>
                 </ul>
             </td>
-        </tr>
-        <tr>
-            <th>POO</th>
-        </tr>
-        <tr>
-        <td>
-            <ul>
-                <li><a href="poo/po1/exo.php">poo1</a></li>
-                <li><a href="poo/po2/exo.php">poo2</a></li>
-                <li><a href="poo/po3/exo.php">poo3</a></li>
-                <li><a href="poo/po4/exo.php">poo4</a></li>
-                <li><a href="poo/poo_f/exo.php">poo_f</a></li>
-                <li><a href="poo/poo_g/exo.php">poo_g</a></li>
-                <li><a href="poo/poo_h/exo.php">poo_h</a></li>
-                <li><a href="poo/poo_i/exo.php">poo_i</a></li>
-                <li><a href="poo/poo_j/exo.php">poo_j</a></li>
-                <li><a href="poo/poo_l/exo.php">poo_l</a></li>
-                 <li><a href="poo/poo_n/exo.php">poo_n</a></li>
-                 <li><a href="poo/poo_o/exo.php">poo_o</a></li>
-                 <li><a href="poo/poo_p/exo.php">poo_p</a></li>
-                 <li><a href="poo/poo_q/exo.php">poo_q</a></li>
-                 <li><a href="poo/poo_r/exo.php">poo_r</a></li>
-                 <li><a href="poo/poo5/exo.php">poo_5</a></li>
-                 <li><a href="poo/poo5b/exo.php">poo_5b</a></li>
-                 <li><a href="poo/poo5c/exo.php">poo_5c</a></li>
-                 <li><a href="poo/poo2/exo.php">poo_2</a></li>
-                 <li><a href="poo/poo12/exo.php">poo_12</a></li>
-            </ul>
-        </td>
+            <td>
+                <ul>
+                    <li><a href="poo/po1/exo.php">poo1</a></li>
+                    <li><a href="poo/po2/exo.php">poo2</a></li>
+                    <li><a href="poo/po3/exo.php">poo3</a></li>
+                    <li><a href="poo/po4/exo.php">poo4</a></li>
+                    <li><a href="poo/poo_f/exo.php">poo_f</a></li>
+                    <li><a href="poo/poo_g/exo.php">poo_g</a></li>
+                    <li><a href="poo/poo_h/exo.php">poo_h</a></li>
+                    <li><a href="poo/poo_i/exo.php">poo_i</a></li>
+                    <li><a href="poo/poo_j/exo.php">poo_j</a></li>
+                    <li><a href="poo/poo_l/exo.php">poo_l</a></li>
+                    <li><a href="poo/poo_n/exo.php">poo_n</a></li>
+                    <li><a href="poo/poo_o/exo.php">poo_o</a></li>
+                    <li><a href="poo/poo_p/exo.php">poo_p</a></li>
+                    <li><a href="poo/poo_q/exo.php">poo_q</a></li>
+                    <li><a href="poo/poo_r/exo.php">poo_r</a></li>
+                    <li><a href="poo/poo4/po04.php">poo_4</a></li>
+                    <li><a href="poo/poo4/po04b.php">poo_4b</a></li>
+                    <li><a href="poo/poo5/exo.php">poo_5</a></li>
+                    <li><a href="poo/poo5b/exo.php">poo_5b</a></li>
+                    <li><a href="poo/poo5c/exo.php">poo_5c</a></li>
+                    <li><a href="poo/poo2/exo.php">poo_2</a></li>
+                    <li><a href="poo/poo12/exo.php">poo_12</a></li>
+                </ul>
+            </td>
         </tr>
     
     </table>
