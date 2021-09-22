@@ -20,19 +20,22 @@
     <?php
     try {
         $voiture1 = new Voiture("voiture1");
-        $voiture1->avancer(100); // Erreur
+        $pneu1 = new Pneu("michelin", "185/65 R15", "2.2", "avg");
+        $pneu2 = new Pneu("michelin", "185/65 R15", "2.2", "avd");
+        $pneu3 = new Pneu("michelin", "185/65 R15", "2.2", "arg");
+        $pneu4 = new Pneu("michelin", "185/65 R15", "2.2", "ard");
+        $voiture1->monter_pneu($pneu1);
+        $voiture1->monter_pneu($pneu2);
+        $voiture1->monter_pneu($pneu3);
+        $voiture1->monter_pneu($pneu4);
         $voiture1->afficher();
-        $camion1 = new Camion("camion1");
-        $camion1->charger(-5000); // Erreur
-        $camion1->demarrer();
-        $camion1->avancer(300);
-        $camion1->afficher();
+        $voiture1->afficher_pneus();
+        echo "<p>Il y a ". $voiture1->nb_pneus(). " pneu(s) monté(s)</p>";
         } catch (Mon_exception $ex) {
-            echo "<p>Mon_exception</p>";
-            echo "<p>Message = ".$ex->getMessage()."</p>";
-            echo "<p>Code = ".$ex->getCode()."</p>";
+        echo "<p>Message = ".$ex->getMessage()."</p>";
+        echo "<p>Code = ".$ex->getCode()."</p>";
         }
-        echo "<p>".Vehicule::$nb . " véhicule(s) instancié(s)</p>";
+        echo Vehicule::$nb . " véhicule(s) instancié(s)";
     ?>
 </body>
 </html>

@@ -12,6 +12,7 @@
             <th>HTML</th>
             <th>CSS</th>
             <th>controles</th>
+            <th>Securite</th>
         </tr>
         <tr>
             <td>
@@ -49,6 +50,11 @@
             <td>
                 <ul>
                     <li><a href="quintero_controle_3">controle3</a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><a href="sec/sec06/">Sec06</a></li>
                 </ul>
             </td>
         </tr>

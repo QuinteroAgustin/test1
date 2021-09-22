@@ -125,7 +125,7 @@ abstract class Vehicule{
   }
 
   function set_pneu($pneu){
-    $this->pneu[] .= $pneu;
+    $this->pneu[] = $pneu;
   }
 
   function monter_pneu(Pneu $pneu){
@@ -135,7 +135,12 @@ abstract class Vehicule{
   abstract function afficher();
 
   function afficher_pneus(){
-    
+    echo "<p>--- Description de " . $this->get_nom() . " ---</p>";
+    echo "<ul>";
+    foreach($this->get_pneu() as $pneu){
+      echo $pneu->afficher();
+    }
+    echo "</ul>";
   }
 
 }
