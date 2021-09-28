@@ -3,13 +3,13 @@
 /**
  * Classe métier Tortue
  *
- * @author jef
+ * @author gus
  */
 class Tortue
 {
 
   // Propriétés
-    private $id;
+    private $id_tortue;
     private $nom;
     private $surnom;
     private $couleur;  // couleur du masque
@@ -27,9 +27,9 @@ class Tortue
     }
 
     // Getter et setter
-    public function get_id()
+    public function get_id_tortue()
     {
-        return $this->id;
+        return $this->id_tortue;
     }
 
     public function get_nom()
@@ -47,9 +47,9 @@ class Tortue
         return $this->couleur;
     }
 
-    public function set_id($id)
+    public function set_id_tortue($id_tortue)
     {
-        $this->id = $id;
+        $this->id_tortue = $id_tortue;
     }
 
     public function set_nom($nom)
@@ -107,7 +107,7 @@ class Tortue
     public function afficher()
     {
         $html = '<ul>';
-        $html .= '<li>id=' . $this->get_id() . '</li>';
+        $html .= '<li>id=' . $this->get_id_tortue() . '</li>';
         $html .= '<li>nom=' . $this->get_nom() . '</li>';
         $html .= '<li>surnom=' . $this->get_surnom() . '</li>';
         $html .= '<li>couleur=' . $this->get_couleur() . '</li>';
