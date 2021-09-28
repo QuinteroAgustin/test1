@@ -54,7 +54,9 @@
             </td>
             <td>
                 <ul>
+                    <li><a href="sec/sec05/">Sec05</a></li>
                     <li><a href="sec/sec06/">Sec06</a></li>
+                    <li><a href="sec/sec07/">Sec07</a></li>
                 </ul>
             </td>
         </tr>
