@@ -28,6 +28,7 @@ $response = $request->fetchAll();
 
 <body>
   <h1>ph143 - Europa</h1>
+  <?php include "menu.php"; ?>
   <h2>Liste des pays de l'Union Européenne</h2>
 
   <table>
