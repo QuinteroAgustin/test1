@@ -12,8 +12,8 @@
 function db_connect()
 {
   $dsn = 'mysql:host=localhost;dbname=Europa';  // contient le nom du serveur et de la base
-  $user = 'root';
-  $password = '';
+  $user = 'europa';
+  $password = 'Limayrac#31';
   try {
     $dbh = new PDO($dsn, $user, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
