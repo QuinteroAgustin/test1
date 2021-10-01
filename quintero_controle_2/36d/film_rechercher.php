@@ -46,6 +46,7 @@ if(isset($_POST['submit'])){
         if(isset($_POST['submit'])){
             echo '<table>';
                 echo '<tr>';
+                    echo '<th>ID</th>';
                     echo '<th>Titre</th>';
                     echo '<th>Phase</th>';
                     echo '<th>Poster</th>';
@@ -58,6 +59,7 @@ if(isset($_POST['submit'])){
                 echo '</tr>';
                 foreach($films as $film){
                     echo '<tr>';
+                        echo '<td>'.$film['id'].'</td>';
                         echo '<td>'.$film['title'].'</td>';
                         echo '<td>'.$film['phase'].'</td>';
                         $id = sprintf("%02d",$film['id']);
