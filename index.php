@@ -50,7 +50,7 @@
             <td>
                 <ul>
                     <li><a href="quintero_controle_3">controle3</a></li>
-                    <li><a href="controle2">controle2</a></li>
+                    <li><a href="quintero_controle_2">controle2</a></li>
                 </ul>
             </td>
             <td>
