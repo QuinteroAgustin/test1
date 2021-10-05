@@ -104,19 +104,19 @@ if ($submit) {
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
       
       <label for="login">Login</label><br>
-      <input type="text" name="login" id="login" value="<?php if($login) echo $login; ?>"><br><br>
+      <input type="text" name="login" id="login" value="<?= $login; ?>"><br><br>
       
       <label for="password">Password</label><br>
       <input type="password" name="password" id="password"><br><br>
       
       <label for="mail">Mail</label><br>
-      <input type="text" name="mail" id="mail" value="<?php if($mail) echo $mail; ?>"><br><br>
+      <input type="text" name="mail" id="mail" value="<?= $mail; ?>"><br><br>
       
       <label for="nom">Nom</label><br>
-      <input type="text" name="nom" id="nom" value="<?php if($nom) echo $nom; ?>"><br><br>
+      <input type="text" name="nom" id="nom" value="<?= $nom; ?>"><br><br>
       
       <label for="age">Age</label><br>
-      <input type="text" name="age" id="age" value="<?php if($age) echo $age; ?>"><br><br>
+      <input type="text" name="age" id="age" value="<?= $age; ?>"><br><br>
 
       <input type="submit" name="submit" value="OK">
     
