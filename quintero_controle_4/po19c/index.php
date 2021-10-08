@@ -1,4 +1,9 @@
 <?php
+/*
+/ Controle n°4
+/ @auteur Gus 
+*/
+//On include la classe calculatrice
     include('classes/Calculatrice.php');
 ?>
 <!DOCTYPE html>
@@ -15,6 +20,11 @@
     try{
         $nb1=2;
         $nb2=3;
+        /*
+        / Remplacement de l'objet
+        / par le nom de la classe
+        / et l'utilisation des :: pour l'appel static
+        */
         $resultat = Calculatrice::addition($nb1,$nb2);
         echo "<p>$nb1+$nb2=".$resultat."</p>";
         $resultat = Calculatrice::soustraction($nb1,$nb2);

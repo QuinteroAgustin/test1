@@ -1,5 +1,6 @@
 <?php
     class Calculatrice{
+        //rajout du "static" avant la denomination de la function pour la mettre en static
         public static function addition(int $val1, int $val2){
             return $val1+$val2;
         }

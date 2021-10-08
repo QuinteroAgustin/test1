@@ -1,4 +1,9 @@
 <?php
+/*
+/ Controle n°4
+/ @auteur Gus 
+*/
+//On include la classe calculatrice
     include('classes/Calculatrice.php');
 ?>
 <!DOCTYPE html>
@@ -13,6 +18,10 @@
     <h1>Po 19 - Calculatrice</h1>
     <?php
 
+    /*
+    / Scripte repris
+    / sur le contrôle
+    */
     $calc= new Calculatrice();
     $nb1=2;
     $nb2=3;

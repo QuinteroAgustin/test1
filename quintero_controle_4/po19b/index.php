@@ -1,4 +1,9 @@
 <?php
+/*
+/ Controle n°4
+/ @auteur Gus 
+*/
+//On include la classe calculatrice
     include('classes/Calculatrice.php');
 ?>
 <!DOCTYPE html>
