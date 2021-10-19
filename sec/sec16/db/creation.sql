@@ -1,0 +1,13 @@
+CREATE DATABASE marathon DEFAULT CHARSET =utf8 COLLATE utf8_general_ci;
+DROP TABLE IF EXISTS inscription;
+CREATE TABLE inscription
+(
+	id_inscription	INT(11) NOT NULL AUTO_INCREMENT,
+	nom	VARCHAR(50)	NOT NULL,
+	prenom	VARCHAR(50)	NOT NULL,
+	age	INT(11)	NOT NULL,
+	email	VARCHAR(50)	NOT NULL,
+	telephone	VARCHAR(50)	NOT NULL,
+	code_postal	VARCHAR(50)	NOT NULL,
+    CONSTRAINT PK_ID_INSCRIPTION PRIMARY KEY (id_inscription)
+)ENGINE=InnoDB;
