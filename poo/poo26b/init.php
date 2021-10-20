@@ -2,7 +2,7 @@
 /**
 * Initialisations dans chaque page
 *
-* @author jef
+* @author gus
 */
 
 /**

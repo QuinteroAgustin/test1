@@ -4,7 +4,6 @@
  */
 require_once "init.php";
 // Crée le tableau d'objets métier "Departement"
-$departements=array();
 $dao = new DepartementDAO(); 
 $departements = $dao->findAll(); 
 ?>

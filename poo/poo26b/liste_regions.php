@@ -4,7 +4,6 @@
  */
 require_once "init.php";
 // Crée le tableau d'objets métier "Region"
-$regions=array();
 $dao = new RegionDAO(); 
 $regions = $dao->findAll();
 ?>
