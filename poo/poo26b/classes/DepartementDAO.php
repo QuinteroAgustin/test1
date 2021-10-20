@@ -2,7 +2,7 @@
 /**
 * Classe DAO DepartementDAO
 *
-* @author jef
+* @author gus
 */
 
 class DepartementDAO extends DAO {

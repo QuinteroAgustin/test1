@@ -3,7 +3,7 @@
 /**
  * Classe Departement
  *
- * @author jef
+ * @author gus
  */
 class Departement
 {

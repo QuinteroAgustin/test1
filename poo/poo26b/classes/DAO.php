@@ -3,7 +3,7 @@
 /**
 * Classe mère DAO
 *
-* @author jef
+* @author gus
 */
 
 class DAO {

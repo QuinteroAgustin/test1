@@ -3,7 +3,7 @@
 /**
  * Classe Region
  *
- * @author jef
+ * @author gus
  */
 class Region
 {
