@@ -3,7 +3,7 @@
 /**
 * Classe DAO RegionDAO
 *
-* @author jef
+* @author gus
 */
 
 class RegionDAO extends DAO {
