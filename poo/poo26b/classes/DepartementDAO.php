@@ -80,4 +80,15 @@ class DepartementDAO extends DAO {
     // Retourne un tableau d'objets
     return $departements;
   } //findAllByIdRegion()
+
+  function updateIdRegion($id_departement, $id_region) {
+    $sql = "UPDATE departements SET id_region = '$id_region' WHERE id = '$id_departement'";
+    try {
+      $sth=$this->executer($sql);
+    } catch (PDOException $e) {
+      die("Erreur lors de la requête SQL : " . $e->getMessage());
+    }
+    return $sth->rowCount();
+  } //findAllByIdRegion()
+
 } // Class DepartementDAO
