@@ -5,9 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ht2</title>
-    <link rel="stylesheet" href="css/mainht12b.css">
+    
 </head>
 <body>
+<style type="text/css">
+/* -- Visualisation des bordures de tableau -- */
+
+table, th, td {
+  border-style: solid;
+  border-width: 1px;
+  border-color : black;
+  border-collapse: collapse;
+}
+/* -- Taille des cellules -- */
+td {
+  width : 50px;
+  height : 100px;
+}
+
+/* -- Couleurs du drapeau -- */
+
+td.bleu {
+  background-color: blue;
+}
+td.blanc {
+  background-color: white;
+}
+td.rouge {
+  background-color: red;
+}
+td.vert {
+  background-color: rgb(34, 168, 16);
+}
+td.noir {
+  background-color: rgb(0, 0, 0);
+}
+td.jaune {
+  background-color: rgb(221, 190, 15);
+}
+td.orange {
+  background-color: rgb(228, 133, 8);
+}
+td.violet {
+  background-color: rgb(115, 8, 177);
+}
+.gay{
+  width : 160px;
+  height : 10px;
+}
+</style>
     <h1>ht12 : drapeau français</h1>
 
     <h4>Drapeau français</h4>

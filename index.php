@@ -67,6 +67,8 @@
             <td>
                 <ul>
                     <li><a href="pdf/pdf1/">pdf1</a></li>
+                    <li><a href="pdf/pdf2/">pdf2</a></li>
+                    <li><a href="pdf/pdf3/">pdf2</a></li>
                     
                 </ul>
             </td>
