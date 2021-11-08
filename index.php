@@ -70,6 +70,7 @@
                     <li><a href="pdf/pdf2/">pdf2</a></li>
                     <li><a href="pdf/pdf3/">pdf2</a></li>
                     <li><a href="pdf/poo26c/">poo26c</a></li>
+                    <li><a href="pdf/test/">test</a></li>
                     
                 </ul>
             </td>

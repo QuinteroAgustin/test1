@@ -35,4 +35,3 @@ define('DB_PASSWORD','');
 define('DB_HOST','localhost');
 define('DB_NAME','geobase2');
 require_once "fpdf/fpdf.php";
-require_once "fpdf/mpdf.php";
