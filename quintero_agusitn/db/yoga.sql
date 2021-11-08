@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 21 oct. 2021 à 15:00
--- Version du serveur : 10.4.20-MariaDB
--- Version de PHP : 7.4.22
+-- Généré le : ven. 22 oct. 2021 à 13:15
+-- Version du serveur : 10.4.21-MariaDB
+-- Version de PHP : 7.4.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -33,7 +33,7 @@ DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `id_user` int(11) NOT NULL,
   `login` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `nom` varchar(50) NOT NULL,
   `prenom` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
@@ -45,8 +45,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `login`, `password`, `nom`, `prenom`, `email`, `telephone`) VALUES
-(1, 'bob', 'bob', 'chose', 'Bob', 'bob@m2l.fr', '3360102030405'),
-(2, 'bill', 'bill', 'machin', 'Bill', 'bill@m2l.fr', '3360405060708');
+(9, 'bob', '$2y$10$/o2c4Fh9RwihgH0Bn9Mi8OumHXCiFc12QZaiDqUNpZ8RYE21aN6/S', 'Bob', 'Boby', 'bob.boby@bob.fr', '3315241253');
 
 --
 -- Index pour les tables déchargées
@@ -66,7 +65,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
