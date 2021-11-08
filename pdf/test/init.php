@@ -27,6 +27,10 @@ spl_autoload_register('my_autoloader');
 header("Cache-Control: no-cache, must-revalidate");
 header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
 
-/** charge la classe FPDF qui est dans un dossier à part */
-
-require_once "fpdf/fpdf.php";
+/**
+ * Paramètre de la base de données
+ */
+define('DB_USER','root');
+define('DB_PASSWORD','');
+define('DB_HOST','localhost');
+define('DB_NAME','classe_metier');

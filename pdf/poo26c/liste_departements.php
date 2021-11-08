@@ -20,6 +20,7 @@ $departements = $dao->findAll();
   <h1>po26c</h1>
   <h2>Liste des départements</h2>
   <?php include "menu.php"; ?>
+  <p>Créer un <a href="createpdf.php"> PDF</a></p>
   <table>
   <tr><th>ID</th><th>Libellé</th><th>Région</th><th>Actions</th></tr>
   <?php  
