@@ -6,7 +6,15 @@
  */
 // Initialisations
 include 'init.php';
-
+$db = db_connect();
+try{
+  $sql ='SELECT * FROM inscription ORDER BY id_inscription ASC';
+  $request=$db->prepare($sql);
+  $request->execute();
+  $users=$request->fetchAll();
+}catch (PDOException $ex) {
+  die("Erreur lors de la connexion SQL : " . $ex->getMessage());
+}
 // Affichage
 ?>
 <!DOCTYPE html>
@@ -34,6 +42,19 @@ include 'init.php';
           <th>Téléphone</th>
           <th>Code postal</th>
       </tr>
+      <?php 
+      foreach ($users as $user){
+        echo "<tr>";
+        echo '<td>'.$user['prenom'].'</td>';
+        echo '<td>'.$user['nom'].'</td>';
+        echo '<td>'.$user['age'].'</td>';
+        echo '<td>'.$user['email'].'</td>';
+        echo '<td>'.$user['telephone'].'</td>';
+        echo '<td>'.$user['code_postal'].'</td>';
+        echo "</tr>";
+      }
+
+      ?>
       
   </table>
   </div>
