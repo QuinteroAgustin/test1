@@ -58,7 +58,7 @@ $pdf->Ln(8);
 $nb = count($pays);
 $pdf->SetFont('', '');
 $pdf->SetX(20);
-$pdf->Cell(0, 5, chr(149) . ' ' .utf8_decode($nb . ' département(s)'), 0, 1);
+$pdf->Cell(0, 5, chr(149) . ' ' .utf8_decode($nb . ' pays'), 0, 1);
 
 // Génération du document PDF
 $pdf->Output('f','outfiles/'.$pdf->mon_fichier);
