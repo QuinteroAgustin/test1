@@ -42,15 +42,18 @@ $pdf->Cell(15, 5, utf8_decode("Alpha2"), 1,0,"C",true);
 $pdf->Cell(15, 5, utf8_decode("Alpha3"), 1,0,"C",true);
 $pdf->Cell(70, 5, utf8_decode("Nom(EN)"), 1,1,"C",true);
 // Salarié
+$fill=false;
+$pdf->SetFillColor(224,235,255);
 foreach ($pays as $val) {
     $pdf->SetFont('', '', 10);
     $pdf->SetX(10);
-    $pdf->Cell(10, 5, utf8_decode($val->get_id_pays()),1,0,"C");
-    $pdf->Cell(70, 5, utf8_decode($val->get_nom_fr()),1,0,"C");
-    $pdf->Cell(10, 5, utf8_decode($val->get_code()),1,0,"C");
-    $pdf->Cell(15, 5, utf8_decode($val->get_alpha2()),1,0,"C");
-    $pdf->Cell(15, 5, utf8_decode($val->get_alpha3()),1,0,"C");
-    $pdf->Cell(70, 5, utf8_decode($val->get_nom_en()),1,1,"C");
+    $pdf->Cell(10, 5, utf8_decode($val->get_id_pays()),1,0,"C", $fill);
+    $pdf->Cell(70, 5, utf8_decode($val->get_nom_fr()),1,0,"C", $fill);
+    $pdf->Cell(10, 5, utf8_decode($val->get_code()),1,0,"C", $fill);
+    $pdf->Cell(15, 5, utf8_decode($val->get_alpha2()),1,0,"C", $fill);
+    $pdf->Cell(15, 5, utf8_decode($val->get_alpha3()),1,0,"C", $fill);
+    $pdf->Cell(70, 5, utf8_decode($val->get_nom_en()),1,1,"C", $fill);
+    $fill=!$fill;
 }
 
 // Nb de salariés
