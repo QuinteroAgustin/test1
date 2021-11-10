@@ -57,7 +57,7 @@ class MarvelDAO extends DAO {
   } // function findAll()
 
   function insert(Marvel $marvel){
-    $sql = "INSERT INTO mcu (title, phase, us_release_date, directors, screenwriters, producers, status) VALUES (:title, :phase, :us_release_date, :directors, :screenwriters, producers, status)";
+    $sql = "INSERT INTO mcu (title, phase, us_release_date, directors, screenwriters, producers, status) VALUES (:title, :phase, :us_release_date, :directors, :screenwriters, :producers, :status)";
     try{
       $values = array(
         ':title' => $marvel->get_title(), 
@@ -96,7 +96,7 @@ class MarvelDAO extends DAO {
   }
 
   function delete($id){
-    $sql = "DELETE FROM mcu WHERE id=:id_pidays";
+    $sql = "DELETE FROM mcu WHERE id=:id";
     try{
       $sth = $this->executer($sql, array('id' => $id));
     }catch (PDOException $e) {
