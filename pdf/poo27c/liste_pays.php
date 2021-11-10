@@ -20,6 +20,7 @@ $les_pays = $dao->findAll();
   <h1>po27c</h1>
   <h2>Liste des pays</h2>
   <?php include "menu.php"; ?>
+  <p>Créer un <a href="createpdfpays.php"> PDF</a></p>
   <p>[<a href="ajouter_pays.php">Ajouter</a>] un pays</p>
   <table>
   <tr>
