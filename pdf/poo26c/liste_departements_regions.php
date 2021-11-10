@@ -22,6 +22,7 @@ $regions = $dao->findAll();
   <h1>po26c</h1>
   <h2>Liste des départements par région</h2>
   <?php include "menu.php"; ?>
+  <p>Créer un <a href="createpdfdep_reg.php"> PDF</a></p>
   <?php
   foreach ($regions as $region) {
       echo '<h3> Région : ' . $region->get_libelle() . '</h3>';

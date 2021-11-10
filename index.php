@@ -57,6 +57,7 @@
             </td>
             <td>
                 <ul>
+                    <li><a href="quintero_agusitn/">controle</a></li>
                     <li><a href="sec/sec06/">Sec06</a></li>
                     <li><a href="sec/sec15/">Sec15</a></li>
                     <li><a href="sec/sec16/">Sec16</a></li>

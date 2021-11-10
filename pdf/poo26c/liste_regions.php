@@ -20,6 +20,7 @@ $regions = $dao->findAll();
   <h1>po26c</h1>
   <h2>Liste des régions</h2>
   <?php include "menu.php"; ?>
+  <p>Créer un <a href="createpdfreg.php"> PDF</a></p>
   <table>
   <tr><th>ID</th><th>Libellé</th><th>Outre-mer ?</th><th>Nb départements</th></tr>
   <?php  
