@@ -53,11 +53,13 @@
                     <li><a href="quintero_controle_3">controle3</a></li>
                     <li><a href="quintero_controle_2">controle2</a></li>
                     <li><a href="quintero_controle_4">controle4</a></li>
+                    <li><a href="sec17">sec17_controle</a></li>
+                    <li><a href="sec18">sec18_controle</a></li>
                 </ul>
             </td>
             <td>
                 <ul>
-                    <li><a href="quintero_agusitn/">controle</a></li>
+                    <li><a href="quintero_agustin/">controle_sec17</a></li>
                     <li><a href="sec/sec06/">Sec06</a></li>
                     <li><a href="sec/sec15/">Sec15</a></li>
                     <li><a href="sec/sec16/">Sec16</a></li>

@@ -1,0 +1,18 @@
+Après un audit, les failles ci-dessous ont été détectées :
+1. un fichier ini visible depuis Internet contient le user, le mot de passe et le nom de la base de données
+MySQL
+2. Les champs du formulaire de réservation ne sont pas vérifiés
+ID salle n'est pas obligatoire
+date de début n'est pas obligatoire
+date de fin n'est pas obligatoire
+nb personnes n'est pas obligatoire
+nb personnes n'est pas vérifié comme étant un entier
+date de début n'est pas validée comme une date
+date de fin n'est pas validée comme une date
+date de fin n'est pas vérifiée comme étant postérieure à date de début
+3. La réservation n'est pas protégée contre les injections SQL
+4. On peut changer dans l'URL l'ID du user qui réserve
+5. On peut voir les réservations des autres utilisateurs en modifiant l'ID dans l'URL
+6. Les fichiers README sont accessibles depuis Internet
+Expliquez les contre-mesures à appliquer et mettez-les en place sur le site.
+NOTA : les dates peuvent être vérifiées en utilisant la clase DateTime comme ceci :
