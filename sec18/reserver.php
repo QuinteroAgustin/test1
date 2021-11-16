@@ -28,6 +28,11 @@ $submit = isset($_POST['submit']);
 if ($submit) {
   if(empty(trim($id_salle))){
     $messages[] = "L'id de la salle est obligatoire.";
+  }else{
+    $id_salle = filter_var($id_salle, FILTER_SANITIZE_NUMBER_INT);
+    if(filter_var($id_salle, FILTER_VALIDATE_INT) === false){
+      $messages[] = "L'id de la salle n'est pas un entier valide.";
+    }
   }
   if(empty(trim($debut))){
     $messages[] = "La date de debut est obligatoire.";
@@ -103,7 +108,7 @@ if ($submit) {
       echo "</ul>";
     }
     ?>
-    <form action="<?php echo $_SERVER['PHP_SELF'].'?id_user='.$id_user; ?>" method="post">
+    <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
       <p>ID Salle<br /><input type="text" name="id_salle" id="id_salle" value="<?= $id_salle ?>"></p>
       <p>Date début<br /><input type="datetime-local" name="debut" id="debut" value="<?= $debut ?>"></p>
       <p>Date fin<br /><input type="datetime-local" name="fin" id="fin" value="<?= $fin ?>"></p>

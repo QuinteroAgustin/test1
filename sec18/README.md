@@ -35,3 +35,4 @@ Signé : le stagiaire de la compta.
 7- les injection sql pour reserver et les reservation sont stopé
 8- Si on n'est pas connecté on ne peux plus accèder au pages ou il faut être membre
 9- creation d'un .htaccess pour interdire de voir les deux README
+10- l'id de la salle ne peux être que un entier
