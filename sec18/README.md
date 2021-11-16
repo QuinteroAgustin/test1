@@ -34,3 +34,4 @@ Signé : le stagiaire de la compta.
 6- on optien maintent l'id user grace à la session donc plus de modif de reservation d'un autre user, et plus la possibilité de voir les réservation des autres users
 7- les injection sql pour reserver et les reservation sont stopé
 8- Si on n'est pas connecté on ne peux plus accèder au pages ou il faut être membre
+9- creation d'un .htaccess pour interdire de voir les deux README
