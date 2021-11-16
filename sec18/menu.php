@@ -9,8 +9,8 @@ if (isset($_SESSION["user"])) {
   echo "<p>" . $_SESSION["user"]["prenom"] . " " . $_SESSION["user"]["nom"] . " est connecté</p>";
   echo '<ul>';
   echo '<li><a href="index.php">Accueil</a></li>';
-  echo '<li><a href="reserver.php?id_user='.$_SESSION["user"]["id_user"].'">Réserver</a></li>';
-  echo '<li><a href="reservations.php?id_user='.$_SESSION["user"]["id_user"].'">Réservations</a></li>';
+  echo '<li><a href="reserver.php">Réserver</a></li>';
+  echo '<li><a href="reservations.php">Réservations</a></li>';
   echo '<li><a href="deconnexion.php">Déconnexion</a></li>';
   echo '</ul>';
 } else {

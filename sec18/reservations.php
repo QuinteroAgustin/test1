@@ -6,22 +6,29 @@
  */
 // Initialisations
 include "init.php";
-
+if (!isset($_SESSION["user"])){
+  header('Location: connexion.php');
+}
 // Connexion à la base
 $dbh = db_connect();
 
+$messages = array();  // Message d'erreur
+
 // Récupère l'id utilisateur dans la query string
-$id_user = isset($_GET["id_user"]) ? $_GET["id_user"] : null;
+$id_user = isset($_SESSION['user']['id_user']) ? $_SESSION['user']['id_user'] : null;
 
 // Lecture en base des données de l'utilisateur
 
-$sql = "select nom, debut, fin, nb_personnes ";
-$sql .=" from resa r, salle s where r.id_user=$id_user and r.id_salle=s.id_salle order by debut asc";
-try {
-  $sth = $dbh->query($sql);
-  $rows = $sth->fetchAll(PDO::FETCH_ASSOC);
-} catch (PDOException $e) {
-  die("<p>Erreur lors de la requête SQL : " . $e->getMessage() . "</p>");
+try{
+  $sql = "select nom, debut, fin, nb_personnes ";
+  $sql .=" from resa r, salle s where r.id_user=:id_user and r.id_salle=s.id_salle order by debut asc";
+  $request=$dbh->prepare($sql);
+  $request->execute(array(
+    ":id_user" => $id_user
+  ));
+  $rows=$request->fetchAll();
+}catch (PDOException $ex) {
+  die("Erreur lors de la connexion SQL : " . $ex->getMessage());
 }
 ?>
 <!DOCTYPE html>

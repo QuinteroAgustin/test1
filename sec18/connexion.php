@@ -19,23 +19,39 @@ $submit = isset($_POST['submit']);
 
 // Vérifie la connexion
 if ($submit) {
-  // cherche le login et vérifie le password
-    $sql = "select * from user where login='$login' and password='$password'";
+  if(empty(trim($login))){
+    $messages[] = "Le LOGIN est obligatoire.";
+  }
+  if(empty(trim($password))){
+    $messages[] = "Le PASSWORD est obligatoire.";
+  }
+
+  //si il n'y a zero messages d'erreur
+  if(empty($messages)){
     try {
-      $sth = $dbh->query($sql);
-      $row = $sth->fetch(PDO::FETCH_ASSOC);
+      $sql = "select * from user where login=:login";
+      $request=$dbh->prepare($sql);
+      $request->execute(array(
+        ":login" => $login
+      ));
+      $row=$request->fetch();
     } catch (PDOException $e) {
       die("<p>Erreur lors de la requête SQL : " . $e->getMessage() . "</p>");
     }
     if ($row===false){
       $messages[] = "login et/ou password invalide(s), veuillez réessayer !";
     } else {
-      // Connexion réussie, enregistrement en session
-      $_SESSION["user"] = $row;
-      header("Location: reservations.php?id_user=".$row["id_user"]);
+      if (password_verify($password, $row['password']) == TRUE){
+        // Connexion réussie, enregistrement en session
+        $_SESSION["user"] = $row;
+        header("Location: reservations.php");
+      }else{
+        $messages[] = "login et/ou password invalide(s), veuillez réessayer !";
+      }
     }
-} else {
-  $messages[] = "Veuillez vous connecter";
+  } else {
+    $messages[] = "Veuillez vous connecter";
+  }
 }
 ?>
 
@@ -73,7 +89,7 @@ if ($submit) {
     </p>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
       <p>Login<br /><input type="text" name="login" id="login" value="<?= $login ?>"></p>
-      <p>Password<br /><input type="text" name="password" id="password" value="<?= $password ?>"></p>
+      <p>Password<br /><input type="password" name="password" id="password" value="<?= $password ?>"></p>
       <p><input type="submit" name="submit" value="OK" /></p>
     </form>
   </div>

@@ -6,14 +6,16 @@
  */
 // Initialisations
 include "init.php";
-
+if (!isset($_SESSION["user"])){
+  header('Location: connexion.php');
+}
 // Connexion à la base
 $dbh = db_connect();
 
 $messages = array();  // Message d'erreur
 
 // Récupère l'id utilisateur dans la query string
-$id_user = isset($_GET["id_user"]) ? $_GET["id_user"] : null;
+$id_user = isset($_SESSION['user']['id_user']) ? $_SESSION['user']['id_user'] : null;
 
 // Récupère le contenu du formulaire
 $id_salle = isset($_POST['id_salle']) ? $_POST['id_salle'] : null;
@@ -24,15 +26,56 @@ $submit = isset($_POST['submit']);
 
 // Réservation
 if ($submit) {
-  $sql = "INSERT INTO resa(id_user,id_salle,debut,fin,nb_personnes) VALUES ('$id_user','$id_salle','$debut','$fin','$nb_personnes')";
-  try {
-    $nb = $dbh->exec($sql);
-  } catch (PDOException $e) {
-    die("<p>Erreur lors de la requête SQL : " . $e->getMessage() . "</p>");
+  if(empty(trim($id_salle))){
+    $messages[] = "L'id de la salle est obligatoire.";
   }
-  $messages[] = "$nb réservation(s)";
-} else {
-  $messages[] = "Veuillez saisir votre réservation";
+  if(empty(trim($debut))){
+    $messages[] = "La date de debut est obligatoire.";
+  }
+  if(empty(trim($fin))){
+    $messages[] = "La date de fin est obligatoire.";
+  }
+  if(empty(trim($nb_personnes))){
+    $messages[] = "Le nombre de personne est obligatoire.";
+  }else{
+    $nb_personnes = filter_var($nb_personnes, FILTER_SANITIZE_NUMBER_INT);
+    if(filter_var($nb_personnes, FILTER_VALIDATE_INT) === false){
+      $messages[] = "Le nombre de personne n'est pas un entier valide.";
+    }
+  }
+
+  $dt1 = DateTime::createFromFormat("Y-m-d\TH:i",$debut);
+  $dt2 = DateTime::createFromFormat("Y-m-d\TH:i",$fin);
+
+  if ($dt1 === false) {
+    $messages[] = "la date de début n'est pas valide : " . $debut;
+  }
+  if ($dt2 === false) {
+    $messages[] = "la date de fin n'est pas valide : " . $fin;
+  }
+  if ($dt2 < $dt1) {
+    $messages[] = "la date de fin n'est pas supérieure à la date de début : " . $debut." ".$fin;
+  }
+
+
+  if(empty($messages)){
+    $sql="INSERT INTO resa(id_user,id_salle,debut,fin,nb_personnes) VALUES (:id_user, :id_salle, :debut, :fin, :nb_personnes)";
+    try {
+      $request = $dbh->prepare($sql);
+      $request = $request->execute(array(
+        ":id_user" => $id_user,
+        ":id_salle" => $id_salle,
+        ":debut" => $debut,
+        ":fin" => $fin,
+        ":nb_personnes" => $nb_personnes
+      ));
+    } catch (PDOException $e) {
+      die("<p>Erreur lors de la requête SQL : " . $e->getMessage() . "</p>");
+    }    
+    $messages[] = "$request réservation(s)";
+  } else {
+    $messages[] = "Veuillez saisir votre réservation";
+  }
 }
 ?>
 <!DOCTYPE html>
