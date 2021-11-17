@@ -58,7 +58,7 @@
                     <li><a href="poo/poo_19_quintero_controle_4">poo_19_quintero_controle_4</a></li>
                     <li><a href="sec/sec17">sec17_controle</a></li>
                     <li><a href="sec/sec18">sec18_controle</a></li>
-                    <li><a href="poo/poo38b">poo38b_controle</a></li>
+                    <li><a href="poo/poo38c">poo38c_controle</a></li>
                 </ul>
             </td>
             <td>
