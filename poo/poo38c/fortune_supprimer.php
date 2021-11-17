@@ -1,6 +1,6 @@
 <?php
 /**
- * po38b : ajouter une fortune
+ * po38c : ajouter une fortune
  */
 require_once "init.php";
 
@@ -25,11 +25,11 @@ if($submit){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>po38b-Supprimer</title>
+    <title>po38c-Supprimer</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 <body>
-    <h1>po38b</h1>
+    <h1>po38c</h1>
     <h2>Supprimer</h2>
     <?php include "menu.php"; ?>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>?id_fortune=<?= $OldFortune->get_id_fortune() ?>" method="POST">

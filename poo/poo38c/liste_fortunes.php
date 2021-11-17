@@ -1,6 +1,6 @@
 <?php
 /**
- * po38b : liste des fortunes
+ * po38c : liste des fortunes
  */
 require_once "init.php";
 
@@ -15,23 +15,19 @@ $fortunes = $dao->findAll();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>po38b</title>
+  <title>po38c</title>
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 
 <body>
-  <h1>po38b</h1>
+  <h1>po38c</h1>
   <h2>Liste des fortunes</h2>
   <?php include "menu.php"; ?>
-  <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-    <label for="critere">Critère</label><br>
-    <input type="text" name="critere" id="critere"><br><br>
-    <input type="submit" value="Rechercher" name="submit">&nbsp;
-    <input type="reset" value="Rénitialiser">
-  </form>
+  <p><a href="fortune_ajouter.php">Ajouter</a> une fortune</p>
   <table>
     <caption><?= count($fortunes); ?> plus grandes entreprises mondiales classées par chiffre d'affaires en 2018</caption>
     <tr>
+      <th>ID</th>
       <th>Rang</th>
       <th>Nom</th>
       <th>Siège social</th>
@@ -47,6 +43,7 @@ $fortunes = $dao->findAll();
     <?php
   foreach ($fortunes as $fortune) {
       echo "<tr>";
+      echo "<td>".$fortune->get_id_fortune()."</td>";
       echo "<td>".$fortune->get_rang()."</td>";
       echo "<td>".$fortune->get_nom()."</td>";
       echo "<td>".$fortune->get_siege()."</td>";

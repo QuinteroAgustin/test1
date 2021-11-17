@@ -110,5 +110,23 @@ class FortuneDAO extends DAO {
     }
     return $sth->rowCount();
   }
+
+  function chercher($critere){
+    $sql = "SELECT * FROM fortune WHERE nom LIKE :critere OR siege LIKE :critere OR pays LIKE :critere OR branche LIKE :critere";
+    try {
+      $params = array(":critere" => "%".$critere."%");
+      $sth=$this->executer($sql,$params); 
+      $rows = $sth->fetchAll(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+      die("Erreur lors de la requête SQL : " . $e->getMessage());
+    }
+
+    $fortunes = array();
+    foreach ($rows as $row) {
+      $fortunes[] = new Fortune($row);
+    }
+    // Retourne un tableau d'objets "fortunes"
+    return $fortunes;
+  }
   
 } // Class MarvelDAO
