@@ -50,16 +50,16 @@
             </td>
             <td>
                 <ul>
-                    <li><a href="quintero_controle_3">controle3</a></li>
-                    <li><a href="quintero_controle_2">controle2</a></li>
-                    <li><a href="quintero_controle_4">controle4</a></li>
-                    <li><a href="sec17">sec17_controle</a></li>
-                    <li><a href="sec18">sec18_controle</a></li>
+                    <li><a href="php/php_142_quintero_controle_3">php_142_quintero_controle_3</a></li>
+                    <li><a href="php/php_36_quintero_controle_2">php_36_quintero_controle_2</a></li>
+                    <li><a href="poo/poo_19_quintero_controle_4">poo_19_quintero_controle_4</a></li>
+                    <li><a href="sec/sec17">sec17_controle</a></li>
+                    <li><a href="sec/sec18">sec18_controle</a></li>
                 </ul>
             </td>
             <td>
                 <ul>
-                    <li><a href="quintero_agustin/">controle_sec17</a></li>
+                    <li><a href="sec/sec_quintero_agustin_17/">controle_sec17</a></li>
                     <li><a href="sec/sec06/">Sec06</a></li>
                     <li><a href="sec/sec15/">Sec15</a></li>
                     <li><a href="sec/sec16/">Sec16</a></li>
@@ -123,6 +123,7 @@
                     <li><a href="js/js12d/exo.html">js12d</a></li>
                     <li><a href="js/js37/exo.html">js37</a></li>
                     <li><a href="js/js41/exo.php">js41</a></li>
+                    <li><a href="js/js_Quintero_Control5/">js_Quintero_Control5</a></li>
                 </ul>
             </td>
             <td>
