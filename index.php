@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Navigation - XAMPP</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <h1>PhpMyAdmin</h1>
+    <p>Lien pour <a href="../phpmyadmin">PhpMyAdmin</a></p>
     <h1>Navigation exos</h1>
     <table>
         <tr>
