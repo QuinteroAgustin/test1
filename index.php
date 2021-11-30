@@ -77,7 +77,7 @@
                     <li><a href="pdf/pdf2/">pdf2</a></li>
                     <li><a href="pdf/pdf3/">pdf2</a></li>
                     <li><a href="pdf/poo26c/">poo26c</a></li>
-                    <li><a href="pdf/poo27c/">poo27c</a></li>
+                    <li><a href="pdf/poo27d/">poo27d</a></li>
                     <li><a href="pdf/test/">test</a></li>
                     
                 </ul>
@@ -87,6 +87,7 @@
             <th>PHP</th>
             <th>JS</th>
             <th>POO</th>
+            <th>JSON</th>
         </tr>
         <tr>
             <td>
@@ -163,8 +164,12 @@
                     <li><a href="poo/poo142e/index.php">poo_142e</a></li>
                 </ul>
             </td>
+            <td>
+                <ul>
+                    <li><a href="json/poo27d/">poo27d</a></li>
+                </ul>
+            </td>
         </tr>
-    
     </table>
 </body>
 </html>
