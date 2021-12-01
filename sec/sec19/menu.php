@@ -5,8 +5,8 @@
  */
 
 // Gestion de la connexion
-if (isset($_SESSION["login"])) {
-  $bienvenue="Salut ".$_SESSION["login"];
+if (isset($_SESSION["user"])) {
+  $bienvenue="Salut ".$_SESSION["user"]['login'];
 } else {
   $bienvenue="Salut étranger";
 }
