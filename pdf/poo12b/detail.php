@@ -16,9 +16,20 @@
     $tortue = New TortueDAO;
     $tortue = $tortue->find($_GET['id']);
     echo "<h3>Détails de ".$tortue->get_nom()."</h3>";
+    echo '<p>Fichier format [<a href="createpdftortue.php?id='.$tortue->get_id_tortue().'">PDF</a>]</p>';
     echo $tortue->afficher();
-    echo "<img src=\"img/".$tortue->get_nom().".jpg\" alt=\"Image de ".$tortue->get_nom()."\">";
-    ?>$
+    echo "<img src=\"img/".$tortue->get_nom().".jpg\" alt=\"Image de ".$tortue->get_nom()."\"><br>";
+    
+    // Lecture de la description associée à la tortue
+    $nom_fichier = "infiles/".$tortue->get_nom().".txt";
+    $texte = file_get_contents($nom_fichier);
+    if ($texte===false){
+        $texte = "Erreur : impossible de lire le fichier ".$nom_fichier." !";
+    }
+    $html = nl2br($texte); //Transforme les sauts en balise <br/>
+    echo $html; // Affichage de la description
+    ?>
+    
     
     <p>Revenir à <a href="index.php">page d'accueil</a></p>
 </body>

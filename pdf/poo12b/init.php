@@ -34,3 +34,5 @@ header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
  define('DB_PASSWORD','');
  define('DB_HOST','localhost');
  define('DB_NAME','tortues_ninja');
+
+ require_once "fpdf/fpdf.php";
