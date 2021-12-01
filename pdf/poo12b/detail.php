@@ -17,6 +17,7 @@
     $tortue = $tortue->find($_GET['id']);
     echo "<h3>Détails de ".$tortue->get_nom()."</h3>";
     echo '<p>Fichier format [<a href="createpdftortue.php?id='.$tortue->get_id_tortue().'">PDF</a>]</p>';
+    echo '<p>Fichier format [<a href="createjsontortue.php?id='.$tortue->get_id_tortue().'">JSON</a>]</p>';
     echo $tortue->afficher();
     echo "<img src=\"img/".$tortue->get_nom().".jpg\" alt=\"Image de ".$tortue->get_nom()."\"><br>";
     
