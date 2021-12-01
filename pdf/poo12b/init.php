@@ -30,7 +30,7 @@ header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
 /**
  * Paramètre de la base de données
  */
- define('DB_USER','turtle');
- define('DB_PASSWORD','Limayrac#31');
+ define('DB_USER','root');
+ define('DB_PASSWORD','');
  define('DB_HOST','localhost');
  define('DB_NAME','tortues_ninja');

@@ -24,4 +24,4 @@ define('DS', DIRECTORY_SEPARATOR);   // Séparateur des noms de dossier (dépend
 define('ROOT', dirname(__FILE__));  // Racine du site en absolu (à utiliser dans les includes par exemple)
 
 // Date système
-define('DATE_SYSTEME',"2022-12-01");
+define('DATE_SYSTEME',"2023-12-01");
