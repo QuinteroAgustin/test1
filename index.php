@@ -78,7 +78,7 @@
                     <li><a href="pdf/pdf2/">pdf2</a></li>
                     <li><a href="pdf/pdf3/">pdf2</a></li>
                     <li><a href="pdf/poo26c/">poo26c</a></li>
-                    <li><a href="pdf/poo27d/">poo27d</a></li>
+                    <li><a href="pdf/poo27c/">poo27d</a></li>
                     <li><a href="pdf/test/">test</a></li>
                     <li><a href="pdf/poo12b/">poo12b</a></li>
                     
@@ -169,6 +169,7 @@
             <td>
                 <ul>
                     <li><a href="json/poo27d/">poo27d</a></li>
+                    <li><a href="json/poo43/">poo43</a></li>
                 </ul>
             </td>
         </tr>
