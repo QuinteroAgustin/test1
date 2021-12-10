@@ -1,6 +1,6 @@
 <?php
 /**
- * po38c : liste des fortunes
+ * po43 : details des ingrédients
  */
 require_once "init.php";
 

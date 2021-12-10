@@ -1,10 +1,12 @@
 <?php
 /**
- * po38c : liste des fortunes
+ * po43 : liste des fortunes
  */
 require_once "init.php";
 
-
+// Requête vers l'API
+$json = file_get_contents("https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list");
+$ingredients = json_decode($json,true);
 
 ?>
 <!DOCTYPE html>
@@ -20,42 +22,24 @@ require_once "init.php";
 
 <body>
   <h1>po43</h1>
-  <h2>Liste des Cocktails</h2>
+  <h2>Liste des Ingredients</h2>
   <?php include "menu.php"; ?>
   <table>
     <tr>
-      <th>ID</th>
       <th>Rang</th>
       <th>Nom</th>
-      <th>Siège social</th>
-      <th>Pays</th>
-      <th>Chiffre d'affaires (millions $)</th>
-      <th>Bénéfice (millions $)</th>
-      <th>Employés</th>
-      <th>Branche</th>
-      <th>Directeur général (CEO)</th>
-      <th>Évolution 2017</th>
-      <th>Actions</th>
+      <th>Détails</th>
     </tr>
     <?php
-  foreach ($fortunes as $fortune) {
+  foreach ($ingredients["drinks"] as $key => $ingredient) {
       echo "<tr>";
-      echo "<td>".$fortune->get_id_fortune()."</td>";
-      echo "<td>".$fortune->get_rang()."</td>";
-      echo "<td>".$fortune->get_nom()."</td>";
-      echo "<td>".$fortune->get_siege()."</td>";
-      echo "<td>".$fortune->get_pays()."</td>";
-      echo "<td>".$fortune->get_ca()."</td>";
-      echo "<td>".$fortune->get_benefice()."</td>";
-      echo "<td>".$fortune->get_nb_employes()."</td>";
-      echo "<td>".$fortune->get_branche()."</td>";
-      echo "<td>".$fortune->get_directeur()."</td>";
-      echo "<td>".$fortune->get_evolution()."</td>";
-      echo '<td><a href="fortune_modifier.php?id_fortune='.$fortune->get_id_fortune().'">Modifier</a>&nbsp;<a href="fortune_supprimer.php?id_fortune='.$fortune->get_id_fortune().'">Supprimer</a></td>';
+      echo "<td>".$key."</td>";
+      echo "<td>".$ingredient['strIngredient1']."</td>";
+      echo "<td><a href=\"ingredient_details.php?name=".$ingredient['strIngredient1']."\">".$ingredient['strIngredient1']."</a></td>";
       echo "</tr>";
   }
   ?>
     <table>
-      <p>Il y a <?= count($fortunes); ?> fortunes(s)</p>
+      <p>Il y a <?= count($ingredients["drinks"]); ?> fortunes(s)</p>
 </body>
 </html>
