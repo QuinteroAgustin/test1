@@ -40,6 +40,6 @@ $ingredients = json_decode($json,true);
   }
   ?>
     <table>
-      <p>Il y a <?= count($ingredients["drinks"]); ?> fortunes(s)</p>
+      <p>Il y a <?= count($ingredients["drinks"]); ?> ingredient(s)</p>
 </body>
 </html>

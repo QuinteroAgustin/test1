@@ -3,10 +3,10 @@
  * po43 : liste des fortunes
  */
 require_once "init.php";
-
+$lettre = isset($_GET['lettre']) ? $_GET['lettre'] : NULL;
 // Requête vers l'API
-$json = file_get_contents("https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list");
-$ingredients = json_decode($json,true);
+$json = file_get_contents("https://www.thecocktaildb.com/api/json/v1/1/search.php?f=".$lettre);
+$cocktails = json_decode($json,true);
 
 ?>
 <!DOCTYPE html>
@@ -22,24 +22,41 @@ $ingredients = json_decode($json,true);
 
 <body>
   <h1>po43</h1>
-  <h2>Liste des Ingredients</h2>
+  <h2>Liste des cocktails</h2>
   <?php include "menu.php"; ?>
+  <p>Sélectionnez la première lettre
+    <form action="<?= $_SERVER['PHP_SELF'] ?>" method="GET">
+      <select name="lettre" id="lettre" onchange="this.form.submit()">
+        <?php
+        $selected = NULL;
+        foreach(range('a', 'z') as $char){
+          if($lettre == $char){
+            $selected = "selected";
+          }else{
+            $selected = null;
+          }
+          echo '<option value="'.$char.'" '.$selected.'>'.$char.'</option>';
+        }
+        ?>
+      </select>
+    </form>
+  </p><br>
   <table>
     <tr>
-      <th>Rang</th>
+      <th>ID</th>
       <th>Nom</th>
       <th>Détails</th>
     </tr>
     <?php
-  foreach ($ingredients["drinks"] as $key => $ingredient) {
+  foreach ($cocktails["drinks"] as $cocktail) {
       echo "<tr>";
-      echo "<td>".$key."</td>";
-      echo "<td>".$ingredient['strIngredient1']."</td>";
-      echo "<td><a href=\"ingredient_details.php?name=".$ingredient['strIngredient1']."\">".$ingredient['strIngredient1']."</a></td>";
+      echo "<td>".$cocktail['idDrink']."</td>";
+      echo "<td>".$cocktail['strDrink']."</td>";
+      echo "<td><a href=\"cocktail_details.php?id=".$cocktail['idDrink']."\">".$cocktail['strDrink']."</a></td>";
       echo "</tr>";
   }
   ?>
     <table>
-      <p>Il y a <?= count($ingredients["drinks"]); ?> fortunes(s)</p>
+      <p>Il y a <?= count($cocktails["drinks"]); ?> cocktail(s)</p>
 </body>
 </html>
