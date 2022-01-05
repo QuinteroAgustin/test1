@@ -156,6 +156,8 @@
                     <li><a href="poo/poo5b/exo.php">poo_5b</a></li>
                     <li><a href="poo/poo5c/exo.php">poo_5c</a></li>
                     <li><a href="poo/poo2/exo.php">poo_2</a></li>
+                    <li><a href="poo/poo07/">poo_7</a></li>
+                    <li><a href="poo/poo09/">poo_9</a></li>
                     <li><a href="poo/poo12/exo.php">poo_12</a></li>
                     <li><a href="poo/poo12c/">poo_12b</a></li>
                     <li><a href="poo/poo26a/">poo_26a</a></li>
