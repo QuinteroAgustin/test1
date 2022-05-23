@@ -1,0 +1,50 @@
+INSERT INTO Avant 
+VALUES 
+(200,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=200),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=200)),
+(201,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=201),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=201)),
+(202,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=202),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=202)),
+(203,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=203),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=203)),
+(204,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=204),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=204)),
+(205,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=205),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=205)),
+(206,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=206),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=206)),
+(207,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=207),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=207)),
+(208,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=208),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=208)),
+(209,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=209),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=209)),
+(210,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=210),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=210)),
+(211,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=211),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=211)),
+(212,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=212),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=212)),
+(213,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=213),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=213)),
+(214,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=214),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=214)),
+(215,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=215),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=215)),
+(216,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=216),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=216)),
+(217,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=217),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=217)),
+(218,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=218),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=218)),
+(219,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=219),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=219)),
+(220,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=220),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=220)),
+(221,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=221),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=221)),
+(222,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=222),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=222)),
+(223,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=223),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=223)),
+(224,(SELECT Joueur.PoidsJoueur FROM Joueur WHERE Joueur.IDJoueur=224),(SELECT (Joueur.TailleJoueur)*100 FROM Joueur WHERE Joueur.IDJoueur=224));
+
+
+
+INSERT INTO Arriere 
+VALUES 
+(225,(SELECT (Joueur.AgeJoueur)*0.6 FROM Joueur WHERE Joueur.IDJoueur=225), 'g'),
+(226,(SELECT (Joueur.AgeJoueur)*0.6 FROM Joueur WHERE Joueur.IDJoueur=226), 'g'),
+(227,(SELECT (Joueur.AgeJoueur)*0.6 FROM Joueur WHERE Joueur.IDJoueur=227), 'g'),
+(228,(SELECT (Joueur.AgeJoueur)*0.6 FROM Joueur WHERE Joueur.IDJoueur=227), 'g'),
+(229,(SELECT (Joueur.AgeJoueur)*0.6 FROM Joueur WHERE Joueur.IDJoueur=227), 'g'),
+(230,(SELECT (Joueur.AgeJoueur)*0.6 FROM Joueur WHERE Joueur.IDJoueur=227), 'g'),
+(231,(SELECT (Joueur.AgeJoueur)*0.6 FROM Joueur WHERE Joueur.IDJoueur=227), 'g'),
+(232,(SELECT (Joueur.AgeJoueur)*0.6 FROM Joueur WHERE Joueur.IDJoueur=227), 'g'),
+(233,(SELECT (Joueur.AgeJoueur)*0.6 FROM Joueur WHERE Joueur.IDJoueur=227), 'g'),
+(234,(SELECT (Joueur.AgeJoueur)*0.6 FROM Joueur WHERE Joueur.IDJoueur=227), 'g'),
+(235,(SELECT (Joueur.AgeJoueur)*0.6 FROM Joueur WHERE Joueur.IDJoueur=227), 'g'),
+(236,(SELECT (Joueur.AgeJoueur)*0.6 FROM Joueur WHERE Joueur.IDJoueur=227), 'g'),
+(237,(SELECT (Joueur.AgeJoueur)*0.6 FROM Joueur WHERE Joueur.IDJoueur=227), 'g'),
+(238,(SELECT (Joueur.AgeJoueur)*0.6 FROM Joueur WHERE Joueur.IDJoueur=227), 'g'),
+(239,(SELECT (Joueur.AgeJoueur)*0.6 FROM Joueur WHERE Joueur.IDJoueur=227), 'g'),
+(240,(SELECT (Joueur.AgeJoueur)*0.6 FROM Joueur WHERE Joueur.IDJoueur=227), 'g'),
+(241,(SELECT (Joueur.AgeJoueur)*0.6 FROM Joueur WHERE Joueur.IDJoueur=227), 'g'),
+(242,(SELECT (Joueur.AgeJoueur)*0.6 FROM Joueur WHERE Joueur.IDJoueur=227), 'g');
