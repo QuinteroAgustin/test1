@@ -1,4 +1,7 @@
 #include <iostream>
-using namespace std; int main ()
+using namespace std;
+int main ()
 {
-cout << "Hello world !"<< endl; return 0; }
+    // creation variable : TYPE NOM(VALEUR)
+    cout << "Hello world  !"<< endl; return 0; 
+}
