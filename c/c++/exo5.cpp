@@ -7,6 +7,8 @@ int main()
     /* Déclaration des variables */
     string nom("");
     int age(0);
+    string& nomRef(nom);
+    int& ageRef(age);
 
     // reception des données
     std::cout << "Quel est votre nom & prenom ?" << std::endl;
@@ -14,8 +16,7 @@ int main()
     std::cout << "Quel est votre âge ?" << std::endl;
     cin >> age;
     
-    string& nomRef(nom);
-    int& ageRef(age);
+    
 
     //affichage des données
     std::cout << "Vous vous appelez " << nomRef << " et vous avez " << ageRef << " ans." << std::endl;
