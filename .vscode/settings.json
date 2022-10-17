@@ -65,6 +65,7 @@
         "functional": "cpp",
         "iterator": "cpp",
         "utility": "cpp",
-        "c3.C": "cpp"
+        "c3.C": "cpp",
+        "c6.C": "cpp"
     }
 }
