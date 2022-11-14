@@ -1,18 +1,16 @@
 #include <stdio.h>
-int main()
-{
-    int p = 0;
-    int q = 0;
-    printf("Entrez un nombre p\n");
-    scanf("%d", &p);
-    printf("Entrez un nombre q\n");
-    scanf("%d", &q);
-    if (q%p == 0)   {
-        printf("True");
-    }else{
-        printf("False");
+int estPremier(int p){
+    int premier=0;
+    for (int i = 2; i < p; i++){
+        if (p % i == 0){
+            premier = 1;
+        }
     }
-   return 0;
+    if(premier != 0){
+        return true;
+    }else{
+        return false;
+    }
 }
 
 
