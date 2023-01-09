@@ -38,6 +38,7 @@
                     <li><a href="ht/ht13/exo.php">ht13</a></li>
                     <li><a href="ht/ht13/b/exo.php">ht13b</a></li>
                     <li><a href="ht/ht66/index.php">ht66</a></li>
+                    <li><a href="ht/ht67/index.php">ht66</a></li>
                 </ul>
             </td>
             <td>
