@@ -1,5 +1,5 @@
 #include <iostream>
-#define string symbole;
+char operateur = '+';
 using namespace std ;
 
 int addition(float a, float b){
@@ -21,34 +21,34 @@ int modulo(int a, int b){
 void calcul(int a, int b){
     float result;
 
-    if(symbole == "-"){
+    if(operateur == '-'){
         result = soustraction(a, b);
-    }else if(symbole == "*"){
+    }else if(operateur == '*'){
         result = multiplication(a, b);
-    }else if(symbole == "/"){
+    }else if(operateur == '/'){
         result = division(a, b);
         if(b==0){
             std::cout << "Division par zéro impossible !" << std::endl;
             result = 0;
         }
-    }else if(symbole == "%"){
+    }else if(operateur == '%'){
         result = modulo(a, b);
     }else{
         result = addition(a, b);
     }
-    std::cout << "Le résultat de "<< a <<" "<< symbole << " " << b << " = " << result << std::endl;
+    std::cout << "Le résultat de "<< a <<" "<< operateur << " " << b << " = " << result << std::endl;
 }
 
 int main(void){
     float a, b;
-    string symb;
+    char symb;
     std::cout << "Entrez le nb a : " << std::endl;
     cin >> a;
     std::cout << "Entrez le nb b : " << std::endl;
     cin >> b;
     std::cout << "Entrez le symbole : " << std::endl;
     cin >> symb;
-    const symbole = symb;
+    operateur = symb;
 
     calcul(a, b);
 
